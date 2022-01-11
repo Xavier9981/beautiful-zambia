@@ -1,0 +1,83 @@
+---
+title: Beautiful Zambia - Home page
+layout: 'base.njk'
+---
+
+<main class="main-content-panel">
+    <section class="welcome-content-panel">
+
+        <div>
+            <h2>Welcome to Beautiful Zambia!</h2>
+            <p>Beautiful Zambia is a proudly Zambian owned blog website which is about highlighting the beautiful aspects of Zambia its people and tourists attractions.</p>
+            <p>Its also about sharing the best one can get if the visit Zambia from crafts fashion to even just sitting in the sun and having a good time. So escape the rat race and visit the beautiful Zambia.</p> 
+            <p>Below are some of our favourite articles, or you can go to the blog page to see our most recent posts.</p>
+
+            <div class="flex-group">
+                <a href="#featured-articles" class="btn btn--primary">Featured articles</a>
+                <a href="/pages/blogs/" class="btn btn--neutral">Most recent articles</a>
+            </div>
+        </div>
+        <div>
+
+            <figure><img src="/assets/blog-images/Victoria-Falls-places-to-visit-in-Zambia-Africa.jpg" alt="the victoria falls"></figure>
+            <figcaption class="figcap t-align-center">The Victoria Falls is one of Zambia's biggest tourist attractions.</figcaption>
+        </div>
+
+    </section>
+
+    <section class="logo-wrapper">
+        <div>
+            <figure><img src="/assets/Logo_1495199470265.png" alt="beautiful zambia"></figure> 
+        </div>
+    </section>
+
+    <section class="featured-content-panel">
+        <section  class="featured-articles">
+            <h3 class="section-title">Featured articles</h3>
+            <p class="t-align-center">Here is a list of articles which I feel can give you a good idea of what this blog site is all about.</p>
+            <ul role="list" class="articles-list">
+                
+                <!--<li>
+                    <article class="snippet">
+                        <div>
+                            <img src= "/assets/blog-images/PSX_20190926_184959.jpg" alt="Father giraffe and son bonding in  Lilayi lodge game park." class="snippet-image">
+                            <figcaption class="figcap t-align-center">Father giraffe and son bonding in  Lilayi lodge game park.</figcaption>
+                        </div>
+                        
+                        <div>
+                            <hr class="hr-top">
+                            <h3 class="snippet-title"><a href="post.url">BEAUTIFUL ZAMBIA VISITS LILAYI LODGE</a></h3>
+                            <p class="snippet-meta"> <span>by</span> Caroline N Muneku <span>on</span> Sep 26, 2019</p>
+                            <p class="snippet-body">Beautiful Zambia took time to visit Lilayi Lodge to gain first hand experience of this safari haven nestled in the capital of Zambia, Lusaka. 12 miles from Lusaka and say a 35 minute drive from Manda Hill shopping complex.</p> 
+                            <a href="/src/pages/article.html" class="btn btn--primary">Continue Reading</a>
+                            <hr class="hr-bottom">
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="snippet">
+                        <div>
+                            <img src= "/assets/blog-images/GPJNews_Zambia_PP_-Circus-Zambia-64_web_L.jpg" alt="Father giraffe and son bonding in  Lilayi lodge game park." class="snippet-image">
+                            <figcaption class="figcap t-align-center">Zambia PP - Circus Zambia</figcaption>
+                        </div>
+                        
+                        <div>
+                            <hr class="hr-top">
+                            <h3 class="snippet-title"><a href="post.url">THIS IS ZAMBIA</a></h3>
+                            <p class="snippet-meta"> <span>by</span> Caroline N Muneku <span>on</span> Jun 26, 2017</p>
+                            <p class="snippet-body">Formerly called Northern Rhodesia as an integral part of Cecil Rhodes’ Cape to Cairo vision, Zambia is in fact steeped in history dating all the way back to the African Stone Age. However, in many ways the famous Scottish missionary David Livingstone put the country on the European map as he came to the shores of Lake Tanganyika in search of the source of the Nile in the early 19th century.</p> 
+                            <a href="{{ post.url }}" class="btn btn--primary">Continue Reading</a>
+                            <hr class="hr-bottom">
+                        </div>
+                    </article>
+                </li>-->
+
+                {% for post in collections.featured | reverse %}
+                    {% include 'article-snippet.njk' %}
+                {% endfor %}
+                    
+            </ul>
+        </section> 
+    </section>
+</main>

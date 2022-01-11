@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--start meta data-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--end meta data-->
+
+    <!--start css link-->
+        <link rel="stylesheet" href="/css/style.css">
+    <!--end css link-->
+
+    <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- End Google Fonts -->
+    
+    <!--Font Awesome CSS Links-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- End Font Awesome CSS Links-->
+
+    <!--start favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <!--end favicon-->
+
+    <!--start netlify-identity-->
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!--end netlify-identity-->
+    <title>Beautiful Zambia - Home page</title>
+</head>
+<body>
+    {% include 'header.njk' %}
+    {{ content | safe }}
+    {% include 'footer.njk' %}
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+    </script>
+    
+</body>
+<script src = "/script/current-year.js"></script>
+</html>

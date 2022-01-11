@@ -1,0 +1,21 @@
+---
+layout: "base.njk"
+---
+<main class="main-content-panel">
+    <section class="logo-wrapper">
+        <div>
+            <figure><img src="/assets/Logo_1495199470265.png" alt="beautiful zambia"></figure> 
+        </div>
+    </section>
+    <section class="individual-article">
+        <div>
+            <div>
+                <h2 class="article-title">{{ title }}</h2>
+            </div>
+            <p class="snippet-meta t-align-center"> <span>by</span> {{ author }} <span>on</span> {{ date | postDate }}</p>
+            <figure><img src="{{ image }}" alt="{{ imageAlt }}"></figure>
+            <figcaption class="figcap t-align-center">{{ imageAlt }}</figcaption>
+        </div>
+        {{ content | safe }}
+    </section>
+</main>
