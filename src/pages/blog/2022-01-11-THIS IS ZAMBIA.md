@@ -6,7 +6,7 @@ description: Formerly called Northern Rhodesia as an integral part of Cecil
   Scottish missionary David Livingstone put the country on the European map as
   he came to the shores of Lake Tanganyika in search of the source of the Nile
   in the early 19th century.
-author: Caroline N Muneku
+author: "Beautiful Zambia "
 date: 2017-06-26
 tags:
   - post
