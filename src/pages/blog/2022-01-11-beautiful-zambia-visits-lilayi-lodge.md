@@ -5,7 +5,7 @@ description: Beautiful Zambia took time to visit Lilayi Lodge to gain first hand
   miles from Lusaka and say a 35 minute drive from Manda Hill shopping complex.
   The lodge is set in a private game reserve which home to a unique elephant
   orphanage which we believe is one of only three in the world.
-author: Caroline N Muneku
+author: "Beautiful Zambia "
 date: 2019-09-26T13:25:23.726Z
 tags:
   - post
