@@ -22,7 +22,7 @@ The lodge is set in a private game reserve which home to a unique elephant orpha
 
 ![Enjoy the Mombasa Lamb Curry on your next visit to the Lilayi Lodge Restaurant.](https://1.bp.blogspot.com/-yB3z2PgZCUA/XYzjouccgrI/AAAAAAAAAhw/hzXfrsw6b1gwb54gYXQ5FcUh9jGUxY1DwCLcBGAsYHQ/s1600/IMG_20190926_180258_471.jpg "Enjoy the Mombasa Lamb Curry on your next visit to the Lilayi Lodge Restaurant.")
 
-`<figcaption class="figcap t-align-center">Enjoy the Mombasa Lamb Curry on your next visit to the Lilayi Lodge Restaurant.</figcaption>`
+`<figcaption class="figcap t-align-center">`Enjoy the Mombasa Lamb Curry on your next visit to the Lilayi Lodge Restaurant.`</figcaption>`
 
 <!--EndFragment-->
 
@@ -36,7 +36,7 @@ For those that are foodies the culinary experience at Lilayi is one of kind. You
 
 <!--StartFragment-->
 
-`<figcaption class="figcap t-align-center">Watch the Cape Bushbuck  graze late in the afternoon.</figcaption>`
+`<figcaption class="figcap t-align-center">`Watch the Cape Bushbuck  graze late in the afternoon.`</figcaption>`
 
 <!--StartFragment-->
 
