@@ -79,67 +79,92 @@ h1,h2,h3,h4,h5,h6{
 /* //////////////////////
 header
 /////////////////////// */
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
-header div{
-    margin: auto;
-    text-align: center;
-    padding: 0 5px;
-} 
-
-header div h1{
+header h1{
+    font-size: 1.45rem;
     color: var( --clr-neutral-100);
     text-transform: capitalize;
     font-weight: var(--fw-900);
     font-family: var(--ff-header);
 }
+
+header h1 a{
+    text-decoration: none;
+    color: var( --clr-neutral-100);
+}
         
 /* //////////////////////
 nav bar
 /////////////////////// */
-nav{
+.navbar {
     display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #000000;
+    background: var(--clr-primary-400);
+    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0,50%);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-nav ul{
-    list-style-type: none;
-    display: flex;
-    margin: auto;
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
 }
 
-nav ul li{
-    margin: 0 10px;
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar-links li {
     white-space: nowrap;
+    list-style: none;
 }
 
-nav ul li a{
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
     color: var( --clr-neutral-100);
     font-size: var(--fs-300);
     text-transform: capitalize;
     font-weight: var(--fw-550);
 }
 
-nav ul li a:hover{
+.navbar-links li:hover {
+    background-color: #555;
     text-decoration: none;
 }
 
-.nav-bar{
-    display: flex; 
-    border-bottom: 3px solid #000000;
-    border-top: 3px solid #000000;
-    box-shadow: 0px 4px 8px 0px rgb(0, 0, 0,50%);
-    background: var(--clr-primary-400);
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
     justify-content: space-between;
-    position: sticky;
-    /*margin-bottom: 20px;*/
-    padding: 0 65px;
-    top: 0;
-    z-index: 1;
+    width: 30px;
+    height: 21px;
 }
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 /* //////////////////////
 main-content-panel
 /////////////////////// */
@@ -435,6 +460,10 @@ footer p{
     text-align: center;
     
 }
+
+/* //////////////////////
+media queries
+/////////////////////// */
 @media screen and (max-width: 1024px){
     .main-content-panel{
         grid-template-areas: ". welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel ."
@@ -451,10 +480,6 @@ footer p{
         padding: 20px 0;
     }
 
-    header, nav{
-        margin: 0;
-    }
-
     .snippet-title{
         margin-top: 15px;
     }
@@ -469,11 +494,42 @@ footer p{
 
 }
 
-@media screen and (max-width: 425px){
-    .nav-bar{
-        display: block;
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        border-top: 1px solid;
+        background: #000000;
+    }
+}
+
+@media screen and (max-width: 425px){
     .main-content-panel{
         grid-template-areas: ". welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel welcome-content-panel ."
         ". logo-wrapper logo-wrapper logo-wrapper logo-wrapper logo-wrapper logo-wrapper logo-wrapper logo-wrapper logo-wrapper logo-wrapper ."
