@@ -2,26 +2,26 @@
 title: Beautiful Zambia - Recent articles
 layout: 'base.njk'
 ---
-    <main class="main-content-panel">
+<main class="main-content-panel">
 
-        <section class="logo-wrapper">
-            <div>
-                <figure><img src="/assets/Logo_1495199470265.png" alt="beautiful zambia"></figure> 
-            </div>
-        </section>
+    <section class="logo-wrapper">
+        <div>
+            <figure><img src="/assets/Logo_1495199470265.png" alt="beautiful zambia"></figure> 
+        </div>
+    </section>
 
-        <section class="featured-content-panel">
-            <section  class="featured-articles">
-                <h3 class="section-title">Recent articles</h3>
-                <p class="t-align-center">Here is a list of articles which I feel can give you a good idea of what this blog site is all about.</p>
-                <ul role="list" class="articles-list">
+    <section class="featured-content-panel">
+        <section  class="featured-articles">
+            <h3 class="section-title">Recent articles</h3>
+            <p class="t-align-center">Here is a list of articles which I feel can give you a good idea of what this blog site is all about.</p>
+            <ul role="list" class="articles-list">
+                
+            {% for post in collections.featured | reverse %}
+                {% include 'article-snippet.njk' %}
+            {% endfor %}
                     
-                {% for post in collections.featured | reverse %}
-                    {% include 'article-snippet.njk' %}
-                {% endfor %}
-                        
-                </ul>
-            </section> 
-        </section>
+            </ul>
+        </section> 
+    </section>
 
-    </main>
+</main>

@@ -31,60 +31,11 @@ layout: 'base.njk'
         </div>
     </section>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7587764121279484"
-        crossorigin="anonymous"></script>
-    <!-- horizontal ads -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-7587764121279484"
-        data-ad-slot="5794985680"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
     <section class="featured-content-panel" id="featured-articles">
         <section  class="featured-articles">
             <h3 class="section-title">Featured articles</h3>
             <p class="t-align-center">Here is a list of articles which I feel can give you a good idea of what this blog site is all about.</p>
             <ul role="list" class="articles-list">
-                
-                <!--<li>
-                    <article class="snippet">
-                        <div>
-                            <img src= "/assets/blog-images/PSX_20190926_184959.jpg" alt="Father giraffe and son bonding in  Lilayi lodge game park." class="snippet-image">
-                            <figcaption class="figcap t-align-center">Father giraffe and son bonding in  Lilayi lodge game park.</figcaption>
-                        </div>
-                        
-                        <div>
-                            <hr class="hr-top">
-                            <h3 class="snippet-title"><a href="post.url">BEAUTIFUL ZAMBIA VISITS LILAYI LODGE</a></h3>
-                            <p class="snippet-meta"> <span>by</span> Caroline N Muneku <span>on</span> Sep 26, 2019</p>
-                            <p class="snippet-body">Beautiful Zambia took time to visit Lilayi Lodge to gain first hand experience of this safari haven nestled in the capital of Zambia, Lusaka. 12 miles from Lusaka and say a 35 minute drive from Manda Hill shopping complex.</p> 
-                            <a href="/src/pages/article.html" class="btn btn--primary">Continue Reading</a>
-                            <hr class="hr-bottom">
-                        </div>
-                    </article>
-                </li>
-
-                <li>
-                    <article class="snippet">
-                        <div>
-                            <img src= "/assets/blog-images/GPJNews_Zambia_PP_-Circus-Zambia-64_web_L.jpg" alt="Father giraffe and son bonding in  Lilayi lodge game park." class="snippet-image">
-                            <figcaption class="figcap t-align-center">Zambia PP - Circus Zambia</figcaption>
-                        </div>
-                        
-                        <div>
-                            <hr class="hr-top">
-                            <h3 class="snippet-title"><a href="post.url">THIS IS ZAMBIA</a></h3>
-                            <p class="snippet-meta"> <span>by</span> Caroline N Muneku <span>on</span> Jun 26, 2017</p>
-                            <p class="snippet-body">Formerly called Northern Rhodesia as an integral part of Cecil Rhodes’ Cape to Cairo vision, Zambia is in fact steeped in history dating all the way back to the African Stone Age. However, in many ways the famous Scottish missionary David Livingstone put the country on the European map as he came to the shores of Lake Tanganyika in search of the source of the Nile in the early 19th century.</p> 
-                            <a href="{{ post.url }}" class="btn btn--primary">Continue Reading</a>
-                            <hr class="hr-bottom">
-                        </div>
-                    </article>
-                </li>-->
 
                 {% for post in collections.featured | reverse %}
                     {% include 'article-snippet.njk' %}
