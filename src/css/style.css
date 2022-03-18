@@ -290,7 +290,7 @@ main-content-panel
   border-style: dashed;
   border-radius: 3px;
   color: var(--clr-neutral-100);
-  background: linear-gradient(270deg, #520000, #424242);
+  background: linear-gradient(270deg, #520000, #000000);
   padding: 1px 5px;
   font-style: normal;
 }
